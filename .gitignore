@@ -1,0 +1,22 @@
+# Virtual Environment
+env/
+
+# Django cache files
+__pycache__/
+*.pyc
+
+# Sensitive Credentials
+credentials.json
+signup/settings.py.local 
+
+# Database Files
+db.sqlite3
+*.sqlite3
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
