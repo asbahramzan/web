@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-+%y1uk4+o!7u@510#klo(yypt%_m=&u+#g&jdafjhfwp@w9+r)
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['192.168.1.40', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['192.168.1.31', '127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -86,12 +86,15 @@ WSGI_APPLICATION = 'signup.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'skillswap_db',
-        'USER': 'skillswap_user',
-        'PASSWORD': '123456789',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'skillswap_db',
+        # 'USER': 'skillswap_user',
+        # 'PASSWORD': '123456789',
+        # 'HOST': 'localhost',
+        # 'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+
     }
 }
 
