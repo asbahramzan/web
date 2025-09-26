@@ -86,12 +86,14 @@ WSGI_APPLICATION = 'signup.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'skillswap_db',
-        'USER': 'skillswap_user',
-        'PASSWORD': '123456789',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'skillswap_db',
+        # 'USER': 'skillswap_user',
+        # 'PASSWORD': '123456789',
+        # 'HOST': 'localhost',
+        # 'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
