@@ -220,10 +220,6 @@ class SearchView(APIView):
 
         return Response(serializer.data)
 
-
-
-
-
 class ProposeSwapView(APIView):
     permission_classes = [IsAuthenticated]
 
