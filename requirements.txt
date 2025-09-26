@@ -4,3 +4,5 @@ gunicorn
 django-cors-headers
 fuzzywuzzy
 python-Levenshtein
+channels
+daphne
